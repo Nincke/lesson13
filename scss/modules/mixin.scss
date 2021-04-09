@@ -1,0 +1,24 @@
+@mixin d-flex ( $displey,$justify,$align) {
+    display: $displey;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+// @mixin hoveranimation ($property,$duration,$type,$delay){
+//     transition-property: $property;
+//     transition-duration: $duration;
+//     transition-timing-function: $type;
+//     transition-delay: $delay;
+// }
+@mixin hoveranimation ($property,$duration,$type,$delay) {
+    transition: $property $duration $type $delay;
+}
+@mixin width ($size) {
+    @if ($size == 100px){
+        background-color: royalblue;
+    } @else if ($size == 200px) {
+        background-color: seagreen;
+    } @else {
+        background-color:#fff;
+    }
+}
